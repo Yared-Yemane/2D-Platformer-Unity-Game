@@ -85,6 +85,8 @@ public class PlayerController : MonoBehaviour
 
             rigidBody.linearVelocity = new Vector2(rigidBody.linearVelocity.x, jumpForce);
             jumpsRemaining--;
+
+            SoundManager.Instance.PlayJumpSound();
         }
     }
 
